@@ -1,5 +1,11 @@
 function showCompletionNotification() {
-    alert("Task completed! Notification sent.");
+    const msg = "Task completed! Notification sent.";
+    alert(msg);
+
+    const messageDiv = document.getElementById("message");
+    if (messageDiv) {
+        messageDiv.textContent = msg;
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
